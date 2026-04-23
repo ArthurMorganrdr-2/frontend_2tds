@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Semana de Tecnologia</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 600px; margin: auto; }
+        fieldset { border: 1px solid #ccc; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+        legend { font-weight: bold; padding: 0 10px; }
+        .campo { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input[type="text"], input[type="email"], input[type="password"], select, textarea {
+            width: 100%; padding: 8px; box-sizing: border-box;
+        }
+        .inline-group { display: flex; gap: 15px; flex-wrap: wrap; }
+        .inline-item { display: flex; align-items: center; gap: 5px; }
+        button { background-color: #3284ff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        .checkbox-label { display: inline; } /* Ajuste para labels de checkbox */
+    </style>
+</head>
+<body>
+
+    <h1>Inscrição: Semana de Tecnologia</h1>
+    <p>Preencha os campos abaixo para garantir sua vaga no evento.</p>
+
+    <form action="/enviar-inscricao" method="POST">
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail Acadêmico:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@escola.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha de Acesso:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações Acadêmicas</legend>
+
+            <div class="campo">
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso" required>
+                    <option value="">Selecione seu curso...</option>
+                    <option value="informatica">Informática para Internet</option>
+                    <option value="redes">Redes de Computadores</option>
+                    <option value="desenvolvimento">Desenvolvimento de Sistemas</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label>Série/Ano:</label>
+                <div class="inline-group">
+                    <div class="inline-item">
+                        <input type="radio" id="1ano" name="serie" value="1ano" required>
+                        <label for="1ano">1º Ano</label>
+                    </div>
+                    <div class="inline-item">
+                        <input type="radio" id="2ano" name="serie" value="2ano">
+                        <label for="2ano">2º Ano</label>
+                    </div>
+                    <div class="inline-item">
+                        <input type="radio" id="3ano" name="serie" value="3ano">
+                        <label for="3ano">3º Ano</label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências</legend>
+            <p>Quais áreas você tem interesse?</p>
+            <div class="inline-group">
+                <div class="inline-item">
+                    <input type="checkbox" id="web" name="interesse" value="web">
+                    <label for="web" class="checkbox-label">Web</label>
+                </div>
+                <div class="inline-item">
+                    <input type="checkbox" id="ia" name="interesse" value="ia">
+                    <label for="ia" class="checkbox-label">IA</label>
+                </div>
+                <div class="inline-item">
+                    <input type="checkbox" id="mobile" name="interesse" value="mobile">
+                    <label for="mobile" class="checkbox-label">Mobile</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+            <div class="campo">
+                <label for="comentarios">Comentários ou Observações:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Alguma necessidade especial ou dúvida?"></textarea>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <div class="inline-item">
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos" class="checkbox-label">Li e concordo com os termos do evento.</label>
+            </div>
+        </div>
+
+        <button type="submit">Finalizar Inscrição</button>
+
+    </form>
+
+</body>
+</html>
