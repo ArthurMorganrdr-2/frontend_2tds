@@ -46,7 +46,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
-    color: #333;
+    color:#f2f2f2;
     line-height: 1.6;
 }
 
@@ -71,7 +71,7 @@
 body {
     font-family: Arial;
     padding: 10px;
-    background-color: #f1f1f1;
+    background-image: url("https://i.redd.it/no-spoilers-some-beautiful-captures-from-life-is-strange-2-v0-ya0c1fjecsj81.jpg?width=1920&format=pjpg&auto=webp&s=fe22848283ec7573c75218059ab36f14178adafd");
 }
 
 @media screen and (max-width: 800px) {
