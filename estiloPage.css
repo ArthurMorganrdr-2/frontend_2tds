@@ -1,7 +1,9 @@
 .header {
+    color: rgb(231, 200, 178);
     padding: 30px;
     text-align: center;
-    background-image: url("https://i.redd.it/no-spoilers-some-beautiful-captures-from-life-is-strange-2-v0-ya0c1fjecsj81.jpg?width=1920&format=pjpg&auto=webp&s=fe22848283ec7573c75218059ab36f14178adafd");
+    background-image: url("https://i.redd.it/bid1pdneoxp11.gif");
+    background-position: right;
 }
 
 .header h1 {
@@ -83,8 +85,14 @@ body {
     }
 }
 
-.conteudo-carrinho{
+.item-carrinho {
     float: left;
     width: 23.40%;
     margin: 10px;
+}
+.item-carrinho{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
