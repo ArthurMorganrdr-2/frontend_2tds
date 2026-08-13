@@ -13,23 +13,21 @@ header h1 {
   
 }
 
-
+lista{
+        text-align: center;
+}
 
 h2{
-    color:rgb(114, 5, 5);
+    color:rgb(2, 40, 122);
     text-align: center;
 
 }
 
-h3{
+p{
     color:rgb(41, 28, 13);
     text-align: center;
 }
 
-p{
-    text-align: center;
-    color:rgb(231, 222, 208);
-}
 
 
 form{
@@ -37,15 +35,31 @@ form{
 }
 
 body{
-background-color:rgb(76, 76, 146);
+background-color:rgb(134, 176, 231);
 }
-bandeira{
-   
-    object-position:center
+
+.bandeira {
+    text-align: center;
+    margin: 20px auto;
 }
-topnav {
+
+.bandeira img {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #e1acff;
+    
+}
+.topnav a:hover {
+    background-color: rgb(92, 0, 104);
+    color: rgb(182, 170, 170);
+    border: 3px solid #eee3b0;
+    border-radius: 50px;
 }
 
 a {
